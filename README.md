@@ -23,3 +23,6 @@ Things you may want to cover:
 
 * ...
 # simple-accounting-madhav
+
+The app is published at:
+https://simple-accounting-madhav.herokuapp.com
