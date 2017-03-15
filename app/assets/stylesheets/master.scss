@@ -1,0 +1,58 @@
+$primary-font: 'Open Sans', sans-serif;  
+$secondary-font: 'Dosis', sans-serif;
+$main-blue: #337ab7; 
+$footer-height: 45px;
+
+.navbar-default {
+  font-family: $secondary-font;
+  background-color: white;
+}
+
+html, body {
+  height: 100%;
+  font-family: $primary-font;
+}
+
+.navbar-default .navbar-brand {
+  font-weight: 100; 
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: $main-blue;
+  font-family: 'Pacifico', cursive;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -$footer-height;
+  /* Pad bottom by footer height */
+  padding: 0 0 $footer-height;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+}
+
+.navbar-header {
+	float: none;
+	padding: 2px;
+	background: #e2e2e2;
+  	border-radius: 7px;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+li {
+    padding: 0px 10px 0px 10px;
+}
+
+.footer {
+  height: $footer-height;
+  background-color: #f5f5f5;
+}
+
+.icon-bar {
+  background-color: #337ab7;
+}
