@@ -1,6 +1,6 @@
 class RecordsController < ApplicationController
 	def index
-		@records = Record.all
+		@records = Record.all.order('date DESC').paginate(:page => params[:page], :per_page => 3)
 	end
 
 	def create
