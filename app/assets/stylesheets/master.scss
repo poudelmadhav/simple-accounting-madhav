@@ -18,7 +18,11 @@ html, body {
   font-size: 30px;
   letter-spacing: 2px;
   color: $main-blue;
-  font-family: 'Pacifico', cursive;
+}
+
+.navbar-brand {
+	font-family: 'Pangolin', cursive;
+	font-size: 30px;
 }
 
 #wrap {
