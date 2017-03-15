@@ -1,1 +1,26 @@
-<h1>It's me Madhav.</h1>
+<div class = "panel panel-default">
+	<div class = "panel-body">
+		<blockquote>
+			<table class = "table">
+				<thead>
+					<tr>
+	                  <th>Date</th>
+	                  <th>Title</th>
+	                  <th>Amount</th>
+	                  <th></th>
+	                  <th></th>
+	                </tr>
+				</thead>
+				<tbody>
+					<% @records.each do |record| %>
+					  <tr>
+					  	  <td><%= record.date %></td>
+						  <td><%= record.title %></td>
+						  <td><%= record.amount %></td>
+					  	</tr>
+					<% end %>
+				</tbody>
+			</table>
+		</blockquote>
+	</div>
+</div>

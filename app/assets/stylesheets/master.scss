@@ -59,3 +59,8 @@ li {
 .icon-bar {
   background-color: #337ab7;
 }
+
+/* to remove the left line bar of blockquote */
+blockquote {
+      border-left: none;
+}

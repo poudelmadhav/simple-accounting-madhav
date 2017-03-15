@@ -3,7 +3,8 @@ class CreateRecords < ActiveRecord::Migration[5.0]
     create_table :records do |t|
     	t.string :title
     	t.integer :amount
-    	t.timestamps :date
+
+    	t.timestamps
     end
   end
 end
