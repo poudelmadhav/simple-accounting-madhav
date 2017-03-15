@@ -5,7 +5,12 @@ class RecordsController < ApplicationController
 
 	def create
 		@record = Record.create(record_params)
-		redirect_to root_path
+		if @record.valid?
+	    # Implement later
+	 	else
+	    # Implement later
+	 	end
+  		redirect_to root_path
 	end
 
 	def edit
@@ -20,6 +25,8 @@ class RecordsController < ApplicationController
 	    redirect_to edit_record_path(params[:id])
 	  end
 	end
+
+	def 
 
 	private
 
