@@ -1,5 +1,5 @@
 <h1>Updat Record</h1>
-<%= simple_form_for Record.new do |f| %>
+<%= simple_form_for @record, method: :patch do |f| %>
   <%= f.input :title %>
   <%= f.input :amount %>
   <%= f.input :date %>
