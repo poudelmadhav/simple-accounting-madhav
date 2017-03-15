@@ -6,9 +6,9 @@ class RecordsController < ApplicationController
 	def create
 		@record = Record.create(record_params)
 		if @record.valid?
-	    # Implement later
+	    	flash[:success] = "A record has been successfully created!"
 	 	else
-	    # Implement later
+	    	flash[:alert] = "Woops! Looks like there has been an error!"
 	 	end
   		redirect_to root_path
 	end
@@ -20,8 +20,10 @@ class RecordsController < ApplicationController
 	def update
 	  @record = Record.find(params[:id])
 	  if @record.update(record_params)
+	  	flash[:success] = "A record has been successfully updated!"
 	    redirect_to root_path
 	  else
+	  	flash[:alert] = "Woops! Looks like there has been an error!"
 	    redirect_to edit_record_path(params[:id])
 	  end
 	end
@@ -29,6 +31,7 @@ class RecordsController < ApplicationController
 	def destroy
 	  @record = Record.find(params[:id])
 	  @record.destroy
+	  flash[:success] = "The idea was successfully deleted!"
 	  redirect_to root_path
 	end
 
