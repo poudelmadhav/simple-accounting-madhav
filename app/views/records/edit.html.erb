@@ -1,7 +1,7 @@
 <h1>Updat Record</h1>
 <%= simple_form_for @record, method: :patch do |f| %>
-  <%= f.input :title %>
-  <%= f.input :amount %>
+  <%= f.input :title, placeholder: 'Enter title'%>
+  <%= f.input :amount, placeholder: 'Enter amount' %>
   <%= f.input :date %>
   <%= f.submit 'Update Record', class: 'btn btn-success' %>
 <% end %>

@@ -1,7 +1,7 @@
 <h1>Add New Record</h1>
 <%= simple_form_for Record.new do |f| %>
-  <%= f.input :title %>
-  <%= f.input :amount %>
+  <%= f.input :title, placeholder: 'Enter title', required: true %>
+  <%= f.input :amount, placeholder: 'Enter amount', required: true %>
   <%= f.input :date %>
   <%= f.submit 'Create Record', class: 'btn btn-success' %>
 <% end %>
